@@ -1,54 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap");
 
 /*---------------------------------------------Main Logo-----*/
 
+main {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
 .logo-main {
-    height:750px;
-    width: 750px;
-
-    top: 45%;
-    left: 50%;
-    position: fixed;
-
-    transform: translate(-50%, -50%);
+	width: 75%;
+	max-width: 750px;
+	padding-bottom: 5%;
 }
 
 .logo-main img {
-    align-items: center;
+	height: auto;
+	width: 100%;
 }
 
 .tagline {
-    width: 100%;
-    text-align: center;
-    
+	width: 100%;
+	text-align: center;
 }
 
 .tagline > span {
-    text-transform: uppercase;
-    padding: 6px 0 0 2px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    font-size: 200%;
-    
+	text-transform: uppercase;
+	padding: 6px 0 0 2px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font-size: 200%;
 }
 
 @media only screen and (max-width: 576px) {
-    .logo-main {
-            height: 375px;
-            width: 375px;
-
-            top: 45%;
-            left: 50%;
-            position: fixed;
-
-            transform: translate(-50%, -50%);
-    }
-    .tagline > span {
-        font-size: 100%;
-    }
-
-    
-
+	.tagline > span {
+		font-size: 100%;
+	}
 }

@@ -1,187 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap");
 
 /*---------------------------------------------Font & Colours-----*/
 
 * {
-    color: #fff;
-    padding: 0;
-    margin: 0;
+	color: #fff;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-    font-family: "Josefin Sans", sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 }
-
-
 
 /*---------------------------------------------Background-----*/
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background: transparent;
-    position: fixed;
+	display: grid;
+	grid-template-areas: "header" "main" "footer";
+	grid-template-rows: auto 1fr auto;
+
+	height: 100vh;
+	width: 100vw;
+
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+		url("../img/background_1_crop2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-html {
-    background: url("../img/background_1_crop2.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    background-position: 0 0;
+header {
+	grid-area: header;
 }
-
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.6);
-    z-index: -1;
-
-    padding: 0;
-    margin: 0;
-    
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
 }
 
 /*---------------------------------------------Logo-----*/
 
-
-
 /*---------------------------------------------NavBar-----*/
 
-.nav-mainpage {
-    display: block;
+header {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	padding: 0 32px;
+}
+
+footer {
+	display: grid;
+	justify-content: center;
+
+	padding: 24px 0;
+}
+
+footer .social-container {
+	display: none;
 }
 
 .logo-nav {
-    width: 150px;
-    padding-left: 25px;
-    margin: 0;
-    display: inline-block;
-    box-sizing: border-box;
+	width: 125px;
 }
 
-.navbar-links-container {
-    width: calc(100vw - 250px); /*Learnt this from reel big fish website - need to fully understand it!) */
-    display: inline-block;
-    box-sizing: border-box;
-    height: 75px;   
-}
-
-.menu-container {
-    height: 55px;
-    margin: 10px 0px;
-    box-sizing: border-box;
-    float: left;
-    vertical-align: middle;
+nav {
+	padding-left: 32px;
 }
 
 .menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    vertical-align: middle;
-    top: 0;
-    position: fixed;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .menu-item {
-    display: inline-block;
-    padding: 10px;
-    margin-left: 20px;
-    line-height: 50px;
-    width: 70px;    
+	width: 100px;
+	text-align: center;
 }
 
 .menu-item a {
-    color: #fff;
-    text-transform: uppercase;
-    vertical-align: middle;
+	display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
 }
 
 .menu-item a:hover {
-    font-size: 120%;
-    text-decoration: none;
-    font-weight: bold;
-    overflow: hidden;
-}
-
-.social-container {
-    display: inline-block;
-    float: right;
-    margin: 10px 0;
+	transform: scale(1.2);
+	transform-origin: center center;
+	text-decoration: none;
+	color: orange;
 }
 
 .social-container a i {
-    height: 50px;
-    width: 50px;
-    background-color: #525252; 
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    margin-left: 10px;
-    padding: 10px 0;
-    color: #fff;
-    font-size: 28px;
-    position: relative;
-}
-
-.facebook {
-    animation-name: entry;
-    animation-duration: 0.5s;
-
-}
-
-.instagram {
-    animation-name: entry;
-    animation-duration: 0.7s;
-
-}
-
-@keyframes entry {
-    0% {left:1000px;}
-    100% {left:0px;}
+	height: 50px;
+	width: 50px;
+	background-color: #525252;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	margin-left: 10px;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 28px;
+	position: relative;
 }
 
 .social-container a i:hover {
-    background-color: #fff;
-    color: #000;
+	background-color: #fff;
+	color: #000;
 
-     transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+.facebook {
+	animation-name: entry;
+	animation-duration: 0.5s;
+}
+
+.instagram {
+	animation-name: entry;
+	animation-duration: 0.7s;
+}
+
+@keyframes entry {
+	0% {
+		left: 1000px;
+	}
+	100% {
+		left: 0px;
+	}
 }
 
 @media only screen and (max-width: 576px) {
-        .logo-nav {
-        display: none;
-    }
+	.logo-nav {
+		display: none;
+	}
 
-    .social-container {
-        bottom: 0;
-        position: fixed;
-        width: 100%;
-           
-    }
+	header {
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .social-container a {
-        left: 30%;
+	nav {
+		padding: 24px 0;
+	}
 
-        transform: translate(-50%, -50%);
-        position: relative;
-    }
+	.menu-list {
+		justify-content: center;
+	}
 
-    .menu-list {
-        left: 5vw;
-    }
-
+	header .social-container {
+		display: none;
+	}
+	footer .social-container {
+		display: block;
+	}
 }
-
-
