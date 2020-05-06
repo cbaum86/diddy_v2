@@ -3,12 +3,6 @@
 
 /*---------------------------------------------Main Logo-----*/
 
-main {
-	display: grid;
-	justify-items: center;
-	align-items: center;
-}
-
 .logo-main {
 	width: 75%;
 	max-width: 750px;
