@@ -77,13 +77,9 @@ nav {
 	margin: 0;
 	display: grid;
 	grid-auto-flow: column;
+	column-gap: 36px;
 	justify-content: flex-start;
 	align-items: center;
-}
-
-.menu-item {
-	width: 100px;
-	text-align: center;
 }
 
 .menu-item a {
