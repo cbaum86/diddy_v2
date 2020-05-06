@@ -27,10 +27,14 @@ main {
 	text-transform: uppercase;
 	transform: rotate(-7deg);
 	font-family: "Sigmar One", cursive;
+
+	/* background: -webkit-linear-gradient(left, rgb(221, 2, 155), rgb(243, 166, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
 }
 
-@media only screen and (max-width: 576px) {
-	.tagline > span {
+@media only screen and (max-width: 768px) {
+	.tagline {
 		font-size: 100%;
 	}
 }
