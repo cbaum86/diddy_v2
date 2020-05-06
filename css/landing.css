@@ -12,7 +12,7 @@ main {
 .logo-main {
 	width: 75%;
 	max-width: 750px;
-	padding-bottom: 5%;
+	padding-bottom: 7vh;
 }
 
 .logo-main img {
@@ -21,16 +21,12 @@ main {
 }
 
 .tagline {
-	width: 100%;
+	margin: 32px auto 0 auto;
+	font-size: 250%;
 	text-align: center;
-}
-
-.tagline > span {
 	text-transform: uppercase;
-	padding: 6px 0 0 2px;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	font-size: 200%;
+	transform: rotate(-7deg);
+	font-family: "Sigmar One", cursive;
 }
 
 @media only screen and (max-width: 576px) {
