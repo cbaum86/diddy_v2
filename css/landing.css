@@ -4,7 +4,7 @@
 /*---------------------------------------------Main Logo-----*/
 
 .logo-main {
-	width: 75vmin;
+	width: 60vmin;
 	max-width: 750px;
 	padding-bottom: 7vh;
 }
@@ -16,11 +16,12 @@
 
 .tagline {
 	margin: 32px auto 0 auto;
-	font-size: 250%;
+	font-size: 200%;
 	text-align: center;
 	text-transform: uppercase;
 	transform: rotate(-7deg);
 	font-family: "Sigmar One", cursive;
+	line-height: 1;
 
 	/* background: -webkit-linear-gradient(left, rgb(221, 2, 155), rgb(243, 166, 0));
 	-webkit-background-clip: text;
