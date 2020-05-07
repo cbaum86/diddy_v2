@@ -4,7 +4,7 @@
 /*---------------------------------------------Main Logo-----*/
 
 .logo-main {
-	width: 75%;
+	width: 75vmin;
 	max-width: 750px;
 	padding-bottom: 7vh;
 }
