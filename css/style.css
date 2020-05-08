@@ -13,10 +13,24 @@
 body {
 	/* font-family: "Josefin Sans", sans-serif; */
 	font-family: "Sigmar One", cursive;
+	font-size: 1rem;
+}
+
+h2 {
+	line-height: 1;
 }
 
 a {
 	text-decoration: none;
+}
+
+h2 + h2,
+p + p {
+	margin-top: 24px;
+}
+
+.textCentre {
+	text-align: center;
 }
 
 /*---------------------------------------------Background-----*/
@@ -34,6 +48,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 /*---------------------------------------------Logo-----*/
@@ -138,6 +153,12 @@ nav {
 	100% {
 		left: 0px;
 	}
+}
+
+section {
+	width: 90%;
+	max-width: 960px;
+	padding: 48px 0;
 }
 
 @media only screen and (max-width: 768px) {

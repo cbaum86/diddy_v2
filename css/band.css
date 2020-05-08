@@ -1,19 +1,5 @@
 /*---------------------------------------------Band Info-----*/
 
-.container-band {
-	height: 225px;
-	margin-bottom: 25px;
-}
-
-.info {
-	height: 100px;
-	text-align: center;
-	padding-left: 175px;
-	padding-top: 20px;
-	box-sizing: border-box;
-	font-size: 23px;
-}
-
 /*---------------------------------------------Band Members-----*/
 
 .char-select {
@@ -23,8 +9,8 @@
 	column-gap: 16px;
 	row-gap: 16px;
 	position: relative;
-	height: 50vmin;
-	width: 50vmin;
+	height: 60vmin;
+	width: 60vmin;
 	padding: 24px;
 	background-color: rgba(174, 167, 167, 0.3);
 	border: 4px solid rgba(255, 255, 255, 0.1);
