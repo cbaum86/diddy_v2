@@ -4,7 +4,7 @@
 
 .char-select {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 3fr);
 	grid-template-rows: repeat(3, minmax(0, 1fr));
 	column-gap: 16px;
 	row-gap: 16px;
@@ -34,10 +34,16 @@
 }
 
 .char img {
-	height: 85%;
+	height: auto;
 	width: auto;
+	max-width: 90%;
+	max-height: 85%;
 	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)) brightness(0.9) saturate(0.9);
 	transition: filter 0.2s linear;
+}
+
+.char#large {
+	grid-row-end: span 2;
 }
 
 /*---------------------------------------------Footer-----*/
