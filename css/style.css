@@ -17,7 +17,11 @@ body {
 }
 
 h2 {
+	font-size: clamp(1rem, 2vw, 1.5rem);
 	line-height: 1;
+}
+p {
+	font-size: clamp(0.75rem, 1.2vw, 1rem);
 }
 
 a {
@@ -99,6 +103,7 @@ nav {
 	column-gap: 36px;
 	justify-content: flex-start;
 	align-items: center;
+	font-size: clamp(0.75rem, 1.2vw, 1.5rem);
 }
 
 .menu-item a {
